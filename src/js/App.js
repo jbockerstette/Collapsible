@@ -1,7 +1,6 @@
-import css from '../scss/app.scss';
-
 import React from 'react';
 import image from '../images/expand-vertical-4.svg';
+import Collapsible from "./Collapsible";
 
 class App extends React.Component {
   render() {
@@ -13,39 +12,22 @@ class App extends React.Component {
         </header>
         <div className="content">
           <div className="panel-group">
-            <div className="panel">
-              <div className="panel-heading">
-                <h2>Overview</h2>
-              </div>
-              <div className="panel-collapse">
-                <div className="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid. 3 wolf moon officia aute.
-                </div>
-              </div>
-            </div>
-            <div className="panel">
-              <div className="panel-heading">
-                <h2>Features</h2>
-              </div>
-              <div className="panel-collapse">
-                <div className="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid. 3 wolf moon officia aute.
-                </div>
-              </div>
-            </div>
-            <div className="panel">
-              <div className="panel-heading">
-                <h2>Reviews</h2>
-              </div>
-              <div className="panel-collapse">
-                <div className="panel-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                  richardson ad squid. 3 wolf moon officia aute.
-                </div>
-              </div>
-            </div>
+            <Collapsible title="Overview">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute.</p>
+            </Collapsible>
+            <Collapsible title="Features">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute.</p>
+            </Collapsible>
+            <Collapsible title="Hardware">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute.</p>
+            </Collapsible>
+            <Collapsible title="Software">
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                richardson ad squid. 3 wolf moon officia aute.</p>
+            </Collapsible>
           </div>
         </div>
       </div>
